@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Atomic+Age&family=Charm:wght@700&family=Ewert&family=Grenze+Gotisch:wght@500&family=Jacques+Francois+Shadow&family=Oleo+Script+Swash+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Pattaya&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d0c0c;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 7vh;
+  color: rgb(246, 246, 246);
+}
+
+#slideleft {
+  display: none;
+}
+
+.left {
+  color: rgb(222, 162, 162);
+  margin-left: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left h2 {
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-stretch: ultra-condensed;
+  font-style: oblique;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgb(153, 152, 152), 0 0 7px rgb(48, 47, 47),
+      0 0 15px #372aae4f, 0 0 20px #103576, 0 0 25px #10b5bd, 0 0 27px #1d9ade65,
+      0 0 32px #2a3d9081;
+  }
+  to {
+    text-shadow: 0 0 5px rgb(117, 117, 117), 0 0 10px rgb(107, 107, 107),
+      0 0 15px #c9d199, 0 0 20px #abbb86, 0 0 25px #b3be92, 0 0 30px #cacac8,
+      0 0 35px #c8c9bf;
+  }
+}
+
+.mid ul {
+  list-style: none;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 2px 2px 2px #ababab;
+  font-size: 1.5rem;
+}
+
+.mid ul .phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  letter-spacing: 2px;
+  font-stretch: expanded;
+}
+
+.mid ul .phone a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px; /* Adjust padding as needed */
+  text-decoration: none; /* Ensure no underline */
+  transition: transform 0.4s, background-color 0.4s;
+  color: #f0f0f0ce;
+  margin: 5px 25px;
+}
+
+.mid ul .phone a:hover {
+  transform: scale(1.1);
+  background-color: rgba(247, 242, 247, 0.2); /* Adjust background color and opacity */
+  border-radius: 4px; /* Optional: adjust the border-radius for rounded corners */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0f0606;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 999;
+}
+
+.right button {
+  margin-right: 25px;
+  font-size: 24px;
+  height: 32px;
+  width: 32px;
+  background-color: transparent;
+  border: thin;
+}
+
+.right button a {
+  text-decoration: none;
+  color: #f0f0f0ce;
+}
+
+.right button:hover {
+  transform: scale(1.1);
+}
+
+.bdo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: rgb(241, 234, 240);
+}
+
+h1 {
+  font-size: 55px;
+  font-family: "Jacques Francois Shadow", cursive;
+  font-stretch: expanded;
+  letter-spacing: 4px;
+  text-shadow: 0 0 5px rgb(117, 117, 117), 0 0 10px rgb(107, 107, 107),
+    0 0 15px #c9d199, 0 0 20px #abbb86, 0 0 25px #b3be92, 0 0 30px #cacac8,
+    0 0 35px #c8c9bf;
+    margin: 10px;
+}
+
+p {
+  margin: 10px 10px;
+  font-size: 40px;
+  font-family: "Charm", cursive;
+  text-shadow: 0 0 5px rgb(117, 117, 117), 0 0 10px rgb(107, 107, 107),
+    0 0 15px #c9d199, 0 0 20px #abbb86, 0 0 25px #b3be92, 0 0 30px #cacac8,
+    0 0 35px #c8c9bf;
+    animation: an 3s ease-out infinite both;
+    z-index: -1;
+}
+
+@keyframes an {
+  from {
+    opacity: 0;
+    transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(500px) translate3d(0, 0, 0);
+  }
+}
+
+.search {
+ margin:10px;
+  width: 60%;
+  height: 30px;
+  background: #000;
+  border-radius: 30px;
+  position: relative;
+  z-index: -1;
+}
+
+.input {
+  width: 100%;
+  height: 30px;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 45px;
+  font-size: 15px;
+  outline: none;
+  border: 0;
+}
+
+.btn {
+  position: absolute;
+  right: -10px;
+  top: 0;
+  height: 100%;
+  width: 70px;
+  background: linear-gradient(90deg, rgb(60, 175, 204), rgb(9, 22, 54));
+  background: transparent;
+  color: #fff;
+  color: black;
+  font-size: 20px;
+  clip-path: circle(30%);
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1096px) {
+  .nav {
+    padding: 10px 40px 10px 0px;
+  }
+
+  .mid ul .phone {
+    position: absolute;
+    left: -500%;
+  }
+
+  .mid ul .phone.active {
+    flex-direction: column;
+    display: flex;
+    position: absolute;
+    left: -4px;
+    top: -7px;
+    width: 200px;
+    height: 100vh; /* Use 100vh for full height */
+    background-color: rgb(51, 163, 197);
+    box-shadow: 0 0 10px 1px;
+    transition: 0.5s;
+    overflow-y: auto; 
+    z-index:999;/* Add scroll for overflow content */
+  }
+
+  #slideleft {
+    display: block;
+    cursor: pointer;
+  }
+
+  .left {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .left {
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+  }
+  .mid {
+    display: flex;
+  }
+  .mid ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.slide i {
+  margin-left: 20px;
+  font-size: large;
+  color: white;
+}
+
+/* Background Section */
+.background-section {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 60px); /* Full viewport height minus the navbar height */
+  position: absolute;
+  top: 60px; /* Adjust to the height of the navbar */
+  left: 0;
+  z-index: 1; /* Ensure it's behind .bdo */
+}
+
+.background-column {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.background-column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.background-column:hover img {
+  transform: rotateX(20deg) rotateY(-30deg);
+}
+
+/* Centered Text */
+.bdo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  align-items: center;
+  justify-content: center;
+  color: rgb(10, 10, 10);
+  position: relative;
+  z-index: 2; /* Higher z-index than .background-section */
+  pointer-events: none; /* Allow pointer events to pass through */
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+*, html {
+  --primaryGradient: linear-gradient(90deg, #36d1dc,#36d1dc); /* Sunset gradient */
+  --secondaryGradient: linear-gradient(90deg, #36d1dc, #5b86e5); /* Ocean gradient */
+  --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
+  --primary: #36d1dc; /* Ocean color */
+  --secondary:#36d1dc ; /* Sunset color */
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* CHATBOX */
+.chatbox {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+ 
+  z-index: 999;
+}
+
+/* CONTENT IS CLOSE */
+.chatbox__support {
+  display: flex;
+  flex-direction: column;
+  background: #fefcfc;
+  width: 300px;
+  height: 400px;
+  z-index: -123456;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  box-shadow: var(--primaryBoxShadow);
+}
+
+/* CONTENT ISOPEN */
+.chatbox--active {
+  transform: translateY(-40px);
+  z-index: 123456;
+  opacity: 1;
+}
+
+/* BUTTON */
+.chatbox__button {
+  text-align: right;
+
+  font-size: xx-large;
+}
+.chatbox__button i{
+  font-size: 40px;
+}
+
+/* HEADER */
+.chatbox__header {
+  position: sticky;
+  top: 0;
+  background: var(--primaryGradient);
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  height: 10%;
+  justify-content: center;
+  padding: 15px 20px;
+  box-shadow: var(--primaryBoxShadow);
+}
+
+.chatbox__image--header {
+  align-items: left;
+  
+}
+
+.chatbox__heading--header {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.chatbox__description--header {
+  font-size: .9rem;
+  color: rgb(169, 126, 126);
+}
+
+/* Messages */
+.chatbox__messages {
+  padding: 0 20px;
+  margin-top: auto;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column-reverse;
+}
+
+.messages__item {
+  margin-top: 10px;
+  background: #acb6b7; /* Light cyan */
+  padding: 8px 12px;
+  max-width: 70%;
+  border-radius: 10px;
+}
+
+.messages__item--visitor {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #fff9c4; /* Light yellow */
+  color: #000;
+}
+
+.messages__item--operator {
+  margin-left: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: var(--secondary);
+  color: white;
+}
+
+/* FOOTER */
+.chatbox__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: var(--secondaryGradient);
+  box-shadow: var(--secondaryBoxShadow);
+
+  margin-top: 20px;
+}
+
+.chatbox__footer input {
+  width: 80%;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-align: left;
+  font-size: 1rem;
+}
+.chatbox__footer .send__button {
+  padding: 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: #000;
+}
+
+.chatbox__footer .send__button i {
+  font-size: 24px;
+  margin-left: 50%;
+  color: #000;
+}
+
+.chatbox__footer .send__button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.chatbox__button button,
+.chatbox__button button:focus,
+.chatbox__button button:visited {
+  padding: 15px;
+  background: linear-gradient(270deg, rgb(252, 128, 252), rgb(244, 124, 144), rgb(99, 99, 238));
+  background-size: 400% 400%;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  box-shadow: var(--primaryBoxShadow);
+  cursor: pointer;
+  animation: gradientAnimation 2s ease infinite;
+}
+
+

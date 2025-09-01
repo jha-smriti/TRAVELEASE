@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Taj MahalGuide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Taj Mahal</h1>
+    </header>
+    <input type="hidden" id="place-name" value="Taj Mahal">
+    <input type="hidden" id="location" value="Agra, India">
+    <section id="videos">
+        <h2>Videos about Taj Mahal</h2>
+        <div id="video-container"></div>
+    </section>
+    <section id="weather">
+        <h2>Current Weather</h2>
+        <div id="weather-info"></div>
+    </section>
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+        
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="send__button">
+                    <i class="fa fa-plane"></i>
+                </button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><i class="fa fa-comment"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="chatbox.js"></script>
+    <script>
+        var $SCRIPT_ROOT = "{{ request.script_root }}";
+    </script>
+</body>
+</html>

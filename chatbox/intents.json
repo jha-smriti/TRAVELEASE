@@ -1,0 +1,133 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "taj_mahal",
+      "patterns": [
+        "Tell me about the Taj Mahal",
+        "What are nearby attractions to the Taj Mahal?",
+        "What is the history of the Taj Mahal?",
+        "Where is the Taj Mahal located?",
+        "What are the visiting hours for the Taj Mahal?",
+        "Is the Taj Mahal open today?"
+      ],
+      "responses": [
+        "The Taj Mahal is a mausoleum in Agra, India, built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal.",
+        "Nearby attractions to the Taj Mahal include Agra Fort, Mehtab Bagh, and Fatehpur Sikri.",
+        "The Taj Mahal is located in Agra, Uttar Pradesh, India.",
+        "The visiting hours for the Taj Mahal are from 6:00 AM to 6:30 PM every day except Friday.",
+        "Yes, the Taj Mahal is open today. It remains closed on Fridays for general viewing."
+      ]
+    },
+    {
+      "tag": "golden_temple",
+      "patterns": [
+        "Tell me about the Golden Temple",
+        "What is the history of the Golden Temple?",
+        "Where is the Golden Temple located?",
+        "What are the visiting hours for the Golden Temple?",
+        "Is the Golden Temple open today?"
+      ],
+      "responses": [
+        "The Golden Temple, also known as Harmandir Sahib, is a gurdwara located in Amritsar, Punjab, India. It is the holiest site in Sikhism.",
+        "The Golden Temple is located in Amritsar, Punjab, India.",
+        "The Golden Temple is open 24 hours a day, all days of the week.",
+        "Yes, the Golden Temple is open today. It is open every day."
+      ]
+    },
+    {
+      "tag": "general_attractions",
+      "patterns": [
+        "What are some famous attractions in India?",
+        "Tell me about popular tourist spots in India",
+        "Which places should I visit in India?"
+      ],
+      "responses": [
+        "Some famous attractions in India include the Taj Mahal, the Golden Temple, the Red Fort, the Qutub Minar, and the Jaipur City Palace.",
+        "Popular tourist spots in India are the Taj Mahal, the Golden Temple, the Gateway of India, the Red Fort, and the India Gate.",
+        "You should visit the Taj Mahal, the Golden Temple, the Jaipur City Palace, the Red Fort, and the backwaters of Kerala."
+      ]
+    },
+    {
+      "tag": "travel_tips",
+      "patterns": [
+        "Can you give me some travel tips for India?",
+        "What should I know before traveling to India?",
+        "Any advice for tourists visiting India?"
+      ],
+      "responses": [
+        "Make sure to carry bottled water and stay hydrated. Respect local customs and dress modestly when visiting religious sites. Be cautious with street food to avoid stomach issues.",
+        "It's advisable to have a local SIM card for better connectivity. Use registered taxis or rideshare services for transportation. Be mindful of your belongings in crowded places."
+      ]
+    },
+    {
+      "tag": "food_dining",
+      "patterns": [
+        "What are some famous foods to try in India?",
+        "Can you recommend some restaurants near the Taj Mahal?",
+        "Where can I eat near the Golden Temple?"
+      ],
+      "responses": [
+        "Famous foods to try in India include butter chicken, biryani, dosa, samosas, and chai.",
+        "Near the Taj Mahal, you can try Pinch of Spice, Joney's Place, and Esphahan.",
+        "Close to the Golden Temple, popular dining options include Bharawan Da Dhaba, Kesar Da Dhaba, and The Brother's Amritsari Dhaba."
+      ]
+    },
+    {
+      "tag": "shopping",
+      "patterns": [
+        "What are some good places to shop in India?",
+        "Can you recommend shopping areas near the Taj Mahal?",
+        "Where can I buy souvenirs near the Golden Temple?"
+      ],
+      "responses": [
+        "Good places to shop in India include Chandni Chowk in Delhi, Colaba Causeway in Mumbai, and Commercial Street in Bangalore.",
+        "Near the Taj Mahal, you can shop at Sadar Bazaar, Kinari Bazaar, and Shilpgram.",
+        "For souvenirs near the Golden Temple, visit Hall Bazaar, Guru Bazaar, and Katra Jaimal Singh Bazaar."
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    }
+  ]
+}

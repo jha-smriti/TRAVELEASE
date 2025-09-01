@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="featureButton">FEATURE</button>
+    <div class="container" id="formContainer" style="display: none;">
+        <form action="/sign_up" method="post" id="touristForm">
+            <h1>Tourist Information Form</h1>
+            <div class="form-group">
+                <label for="headName">Head Name:</label>
+                <input type="text" id="headName" name="headName" required>
+            </div>
+            <div class="form-group">
+                <label for="adults">Number of Adults:</label>
+                <input type="number" id="adults" name="adults" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="children">Number of Children:</label>
+                <input type="number" id="children" name="children" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="budget">Budget:</label>
+                <input type="number" id="budget" name="budget" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="travelDates">Travel Dates:</label>
+                <input type="date" id="travelStart" name="travelStart" required>
+                <input type="date" id="travelEnd" name="travelEnd" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <h1>Welcome to North India</h1>
+    <div id="placesContainer" class="places">
+        <div class="box">
+            <div class="face">
+                <img src="img/tajmahal.jpg" alt="Taj Mahal">
+                <h2> Uttar Pradesh</h2>
+                <button class="btn">
+                    <a href="tajmahal.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="face">
+                <img src="img/goa.jpg" alt="Goa">
+                <h2>Goa</h2>
+                <button class="btn">
+                    <a href="goa.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="face">
+                <img src="img/amritsar.jpg" alt="Golden Temple">
+                <h2> Punjab</h2>
+                <button class="btn">
+                    <a href="amritsar.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="face">
+                <img src="img/ajantacaves.jpg" alt="Ajanta Caves">
+                <h2>Maharashtra</h2>
+                <button class="btn">
+                    <a href="ajanta.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="face">
+                <img src="img/lotus_delhi.jpg" alt="Delhi">
+                <h2> Delhi</h2>
+                <button class="btn">
+                    <a href="delhi.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="face">
+                <img src="img/jaipur.jpg" alt="Jaipur">
+                <h2>Rajasthan</h2>
+                <button class="btn">
+                    <a href="jaipur.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="face">
+                <img src="img/ladakh.jpg" alt="Leh">
+                <h2>Ladakh</h2>
+                <button class="btn">
+                    <a href="leh.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="face">
+                <img src="img/varanasi.jpg" alt="Varanasi">
+                <h2>Uttar Pradesh</h2>
+                <button class="btn">
+                    <a href="varanasi.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="face">
+                <img src="img/manali.jpg" alt="Manali">
+                <h2> Himachal Pradesh</h2>
+                <button class="btn">
+                    <a href="manali.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="face">
+                <img src="img/jammu.jpg" alt="Jammu">
+                <h2>Jammu and Kashmir</h2>
+                <button class="btn">
+                    <a href="jammu.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="face">
+                <img src="img/utt.jpg" alt="Rishikesh">
+                <h2> Uttarakhand</h2>
+                <button class="btn">
+                    <a href="rishikesh.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="face">
+                <img src="img/mp.jpg" alt="Jodhpur">
+                <h2>Madhya Pradesh</h2>
+                <button class="btn">
+                    <a href="mp.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+        
+       
+    </div>
+    
+  
+    <script src="script.js"></script>
+</body>
+</html>
