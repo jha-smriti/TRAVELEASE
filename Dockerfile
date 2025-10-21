@@ -21,8 +21,8 @@ FROM python:3.9-slim AS python-app
 
 WORKDIR /app/chatbox
 
-# Copy Python requirements first for better caching
-COPY chatbox/requirements.txt ./requirements.txt 2>/dev/null || echo "Flask==2.1.2\ntorch==2.0.0\ntorchvision==0.15.0\nnltk==3.8.1\nflask-cors\nnumpy<2.0\nwerkzeug==2.0.3" > requirements.txt
+# Copy Python requirements
+COPY chatbox/requirements.txt ./requirements.txt
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
@@ -51,7 +51,7 @@ COPY --from=node-app /app /app
 COPY --from=python-app /app/chatbox /app/chatbox
 
 # Install Python dependencies
-COPY chatbox/requirements.txt ./chatbox/requirements.txt 2>/dev/null || echo "Flask==2.1.2\ntorch==2.0.0\ntorchvision==0.15.0\nnltk==3.8.1\nflask-cors\nnumpy<2.0\nwerkzeug==2.0.3" > /app/chatbox/requirements.txt
+COPY chatbox/requirements.txt ./chatbox/requirements.txt
 RUN pip install --no-cache-dir -r /app/chatbox/requirements.txt
 
 # Expose ports
