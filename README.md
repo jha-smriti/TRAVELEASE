@@ -71,6 +71,23 @@ The Tourism Guide Project is designed to be your ultimate travel companion, maki
 
 ## Usage
 
+### Quick Start with Docker (Recommended)
+
+The easiest way to run TRAVELEASE is using Docker:
+
+```bash
+# Clone the repository
+git clone https://github.com/jha-smriti/TRAVELEASE.git
+cd TRAVELEASE
+
+# Start all services with Docker Compose
+docker-compose up -d
+
+# Access the application at http://localhost:3000
+```
+
+For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
+
 ### Web Interface
 Open your web browser and navigate to `http://localhost:3000` to explore the tourism guide.
 
@@ -83,6 +100,22 @@ Use the respective sections to leave reviews or contact us.
 ## Contributing
 
 We welcome contributions to improve the Tourism Guide Project. Feel free to fork the repository and submit pull requests.
+
+## Deployment
+
+TRAVELEASE can be deployed using multiple methods:
+
+- **Docker** (Recommended): `docker-compose up -d`
+- **Manual**: Follow the installation steps above
+- **Cloud Platforms**: AWS, GCP, Azure, Heroku, DigitalOcean
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for comprehensive deployment instructions including:
+- Docker deployment with docker-compose
+- Manual deployment steps
+- Cloud platform deployment guides (AWS, GCP, Azure, Heroku, DigitalOcean)
+- Environment configuration
+- Production best practices
+- Troubleshooting tips
 
 ## License
 

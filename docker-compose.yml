@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  # MongoDB service
+  mongodb:
+    image: mongo:7.0
+    container_name: travelease-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      - MONGO_INITDB_DATABASE=touristDB
+    networks:
+      - travelease-network
+
+  # Node.js + Flask application
+  web:
+    build: .
+    container_name: travelease-web
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+      - "5000:5000"
+    depends_on:
+      - mongodb
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/touristDB
+      - NODE_ENV=production
+    networks:
+      - travelease-network
+
+volumes:
+  mongodb_data:
+    driver: local
+
+networks:
+  travelease-network:
+    driver: bridge

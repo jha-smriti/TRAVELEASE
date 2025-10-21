@@ -11,7 +11,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Connect to MongoDB
-mongoose.connect('mongodb://0.0.0.0:27017/touristDB');
+const mongoUri = process.env.MONGODB_URI || 'mongodb://0.0.0.0:27017/touristDB';
+mongoose.connect(mongoUri);
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Connection error:'));
